@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+
 class SignUpScreen  extends StatelessWidget{
   @override
-  Widget build(BuildContext context) {
+   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -24,8 +25,8 @@ class SignUpScreen  extends StatelessWidget{
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
                 style: TextStyle(fontSize: 14, color: Colors.grey),
               ),
-              SizedBox(height: 24),
-            // Full Name Field
+              SizedBox(height:24),
+              // Full Name Field
               TextField(
                 decoration: InputDecoration(
                   labelText: 'Name',
@@ -50,8 +51,8 @@ class SignUpScreen  extends StatelessWidget{
                   suffixIcon: Icon(Icons.visibility_off), // Icon mata
                 ),
               ),
-              SizedBox(height: 16),
-              TextField(
+            SizedBox(height: 16),
+            TextField(
                 obscureText: true,
                 decoration: InputDecoration(
                   labelText: 'Confirm',
@@ -70,8 +71,8 @@ class SignUpScreen  extends StatelessWidget{
                   child: Text('Sign Up'),
                 ),
               ),
-              SizedBox(height: 16),
-              // "Or sign in with" text
+            SizedBox(height: 16),
+            // "Or sign in with" text
               Center(
                 child: Text(
                   'or sign in with',
@@ -123,13 +124,14 @@ class SignUpScreen  extends StatelessWidget{
                         ),
                       ),
                     ),
-            ],
-          ),
-          ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
       ),
     );
-  }
+
+   }
 }
