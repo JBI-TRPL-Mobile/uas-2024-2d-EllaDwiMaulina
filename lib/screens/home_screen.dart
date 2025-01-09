@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'sign_in_screen.dart';
+import 'sign_up_screen.dart';
+
 
 class HomeScreen extends StatelessWidget{
   @override
@@ -52,21 +55,34 @@ class HomeScreen extends StatelessWidget{
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
-                     child: Text('Sign in'),
-                     ),
-                     SizedBox(width: 16),
-                     ElevatedButton(
-                      onPressed: () {},
-                       child: Text('Sign up'),
-                       ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignInScreen(), // Navigasi ke SignInScreen
+                        ),
+                      );
+                    },
+                    child: Text('Sign in'),
+                  ),
+                  SizedBox(width: 16),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUpScreen(), // Navigasi ke SignUpScreen
+                        ),
+                      );
+                    },
+                    child: Text('Sign up'),
+                  ),
                 ],
                ),
               ],
             ),
             ),
       ),
-      
         );
   }
 }
